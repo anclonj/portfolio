@@ -39,7 +39,9 @@ gulp.task("styles", () => {
 
 gulp.task("pug", () => {
     return gulp.src(`${SRC_DIR}/views/pages/*.pug`)
-        .pipe($gp.pug())
+        .pipe($gp.pug({
+            pretty: true
+        }))
         .pipe(gulp.dest(`${DIST_DIR}`));
 })
 
@@ -141,6 +143,7 @@ gulp.task("images", () => {
 // галповский вотчер
 gulp.task("watch", () => {
     gulp.watch(`${SRC_DIR}/styles/**/*.scss`, gulp.series("styles"));
+    gulp.watch(`${SRC_DIR}/views/**/*.pug`, gulp.series("pug"));
     gulp.watch(`${SRC_DIR}/images/**/*.*`, gulp.series("images"));
     gulp.watch(`${SRC_DIR}/scripts/**/*.js`, gulp.series("scripts"));
     gulp.watch(`${SRC_DIR}/fonts/*`, gulp.series("fonts"));
@@ -150,7 +153,7 @@ gulp.task("watch", () => {
 gulp.task("default",
     gulp.series(
         "clean",
-        gulp.parallel("styles", "pug","images", "fonts", "scripts", "svg"),
+        gulp.parallel("styles", "pug", "images", "fonts", "scripts", "svg"),
         gulp.parallel("watch", "server")
     )
 );

@@ -1,8 +1,20 @@
-<!DOCTYPE html>
-html(lang="ru")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Portfolio
-    body
+extends ../main.layout.pug
+
+block content
+    .top
+        a.authorization__btn.button(href="#")
+    main.content
+        .person__box
+            .person__avatar
+                .person__avatar--img
+            .person__name Владимир Астахов
+            .person__caption Личный сайт веб разработчика
+            .person__social
+            nav.person__navigation
+                ul.navigation__list
+                    li.navigation__item
+                        a.navigation__link(href="#") Мои работы
+                    li.navigation__item
+                        a.navigation__link(href="#") Обо мне
+                    li.navigation__item
+                        a.navigation__link(href="#") Блог
