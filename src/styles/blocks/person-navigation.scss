@@ -1,0 +1,48 @@
+.person__navigation {
+    width: 100%;
+}
+
+.navigation__list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-between;
+
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    overflow: hidden; 
+}
+
+.navigation__item {
+
+    flex-grow: 1;
+    text-align: center;
+
+    &:first-child::after {
+        width: 2px;
+        height: 100%;
+
+        display: block;
+
+        background-color: $color13;
+
+        content: " ";
+    }
+}
+
+.navigation__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 45px;
+    color: $color1;
+    background-color: $color11;
+
+    transition: .3s;
+
+    &:hover {
+        background-color: $color12;
+    }
+}

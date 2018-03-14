@@ -3,3 +3,17 @@
 
 // Шрифты
 @import "./fonts/fonts";
+
+// Настройки и разметка
+@import "variables/colors";
+@import "layout/setup";
+@import "layout/base";
+
+// Общие для блоков
+@import "blocks/background";
+
+// about.html
+@import "blocks/about-top";
+@import "blocks/authorization-btn";
+@import "blocks/person-box";
+@import "blocks/person-navigation";

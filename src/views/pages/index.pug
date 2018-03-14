@@ -1,20 +1,26 @@
 extends ../main.layout.pug
 
 block content
-    .top
-        a.authorization__btn.button(href="#")
-    main.content
-        .person__box
-            .person__avatar
-                .person__avatar--img
-            .person__name Владимир Астахов
-            .person__caption Личный сайт веб разработчика
-            .person__social
-            nav.person__navigation
-                ul.navigation__list
-                    li.navigation__item
-                        a.navigation__link(href="#") Мои работы
-                    li.navigation__item
-                        a.navigation__link(href="#") Обо мне
-                    li.navigation__item
-                        a.navigation__link(href="#") Блог
+    .background
+        .top
+            a.authorization__btn.button(href="#") Авторизироваться
+        main.content
+            .person__box
+                .person__backround
+                group.person__group
+                    .person__block
+                        .person__avatar
+                            i.person__avatar--img
+                        .person__name Владимир Астахов
+                        .person__caption Личный сайт веб разработчика
+                        .socials
+                            ul.socials__list
+                                li.socials__item
+                                    a.socials__link(href="#")
+                    ul.navigation__list
+                        li.navigation__item
+                            a.navigation__link(href="#") Мои работы
+                        li.navigation__item
+                            a.navigation__link(href="#") Обо мне
+                        li.navigation__item
+                            a.navigation__link(href="#") Блог

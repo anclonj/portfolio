@@ -1,0 +1,15 @@
+.authorization__btn {
+    color: $color1;
+    border: 1px solid $color1;
+    border-radius: 10px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    transition: .3s;
+
+    &:hover {
+        background-color: $color9;
+        border-color: $color8;
+    }
+}
