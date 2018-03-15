@@ -119,7 +119,10 @@ gulp.task("svg", done => {
             $gp.svgSprite({
                 mode: {
                     symbol: {
-                        sprite: "../sprite.svg"
+                        sprite: "../sprite.svg",
+                        example: {
+                            dest: '../../../../tmp/spriteSvgDemo.html'
+                        }
                     }
                 }
             })

@@ -2,7 +2,7 @@
     width: 100%;
 }
 
-.navigation__list {
+.person-nav__list {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -14,24 +14,21 @@
     overflow: hidden; 
 }
 
-.navigation__item {
+.person-nav__item {
 
     flex-grow: 1;
     text-align: center;
 
-    &:first-child::after {
-        width: 2px;
-        height: 100%;
+    &:first-child {
+        border-right: 2px solid #a0b99e;
+    }
 
-        display: block;
-
-        background-color: $color13;
-
-        content: " ";
+    &:last-child {
+        border-left: 2px solid #a0b99e
     }
 }
 
-.navigation__link {
+.person-nav__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,6 +36,8 @@
     height: 45px;
     color: $color1;
     background-color: $color11;
+
+    text-decoration: none; 
 
     transition: .3s;
 

@@ -5,15 +5,21 @@
 @import "./fonts/fonts";
 
 // Настройки и разметка
+@import "setup/setup";
 @import "variables/colors";
 @import "layout/setup";
 @import "layout/base";
 
 // Общие для блоков
 @import "blocks/background";
+@import "blocks/button";
 
-// about.html
-@import "blocks/about-top";
+//Socials block
+@import "blocks/socials";
+@import "blocks/copyright";
+
+// index.html (welcome)
+@import "layout/welcome";
 @import "blocks/authorization-btn";
 @import "blocks/person-box";
 @import "blocks/person-navigation";

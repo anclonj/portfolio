@@ -1,12 +1,7 @@
-.authorization__btn {
+.button--welcome-auth {
     color: $color1;
-    border: 1px solid $color1;
-    border-radius: 10px;
 
-    padding-left: 20px;
-    padding-right: 20px;
-
-    transition: .3s;
+    @include roboto('medium', 'normal');
 
     &:hover {
         background-color: $color9;

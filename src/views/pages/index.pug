@@ -2,25 +2,38 @@ extends ../main.layout.pug
 
 block content
     .background
-        .top
-            a.authorization__btn.button(href="#") Авторизироваться
-        main.content
-            .person__box
-                .person__backround
-                group.person__group
-                    .person__block
-                        .person__avatar
-                            i.person__avatar--img
-                        .person__name Владимир Астахов
-                        .person__caption Личный сайт веб разработчика
-                        .socials
+        .welcome__flex
+            section.welcome__top
+                .welcome__authorization
+                    a.button.button--welcome-auth(href="#") Авторизироваться
+            main.welcome__middle
+                .person__box
+                    .person__backround
+                    group.person__group
+                        .person__block
+                            .person__avatar
+                                i.person__avatar--img
+                            .person__name Александр Иванов
+                            .person__caption Личный сайт веб разработчика
                             ul.socials__list
-                                li.socials__item
-                                    a.socials__link(href="#")
-                    ul.navigation__list
-                        li.navigation__item
-                            a.navigation__link(href="#") Мои работы
-                        li.navigation__item
-                            a.navigation__link(href="#") Обо мне
-                        li.navigation__item
-                            a.navigation__link(href="#") Блог
+                                each item in ['vk', 'github', 'in']
+                                    li.socials__item
+                                        a(href="" class="socials__link")
+                                            svg(viewBox="0 0 35 35" class="socials__icon socials__icon--about")
+                                                use(xlink:href=`./images/icons/sprite.svg#${item}`)
+                        .person__navigation
+                            ul.person-nav__list
+                                li.person-nav__item
+                                    a.person-nav__link(href="#") Мои работы
+                                li.person-nav__item
+                                    a.person-nav__link(href="#") Обо мне
+                                li.person-nav__item
+                                    a.person-nav__link(href="#") Блог
+            section.weclome__down
+                ul.copyright__list
+                    li.copyright__item 
+                        span.copyright__text &copy; Александр Иванов
+                    li.copyright__item 
+                        span.copyright__text Создано с любовью в Loftschool
+                    li.copyright__item
+                        span.copyright__text 2018

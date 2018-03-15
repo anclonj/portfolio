@@ -1,0 +1,28 @@
+.welcome__flex {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.welcome__top {
+    align-self: flex-end;
+    flex: 1 0 auto;
+}
+
+.welcome__authorization {
+    padding-top: 24px;
+    padding-right: 100px;
+}
+
+.welcome__middle {
+    flex: 1 0 auto;
+}
+
+.weclome__down {
+    flex: 0 0 auto;
+    margin-bottom: 42px;
+}
