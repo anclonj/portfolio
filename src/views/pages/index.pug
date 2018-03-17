@@ -5,12 +5,12 @@ block content
         .welcome__flex
             section.welcome__top
                 .welcome__authorization
-                    a.button.button--welcome-auth(href="#") Авторизироваться
+                    a.button.button--welcome-auth(href="login.html") Авторизироваться
             main.welcome__middle
-                .person__box
-                    .person__backround
-                    group.person__group
-                        .person__block
+                .box.person__box
+                    .box__backround
+                    group.box__group
+                        .box__block.person__block
                             .person__avatar
                                 i.person__avatar--img
                             .person__name Александр Иванов
@@ -21,14 +21,14 @@ block content
                                         a(href="" class="socials__link")
                                             svg(viewBox="0 0 35 35" class="socials__icon socials__icon--about")
                                                 use(xlink:href=`./images/icons/sprite.svg#${item}`)
-                        .person__navigation
-                            ul.person-nav__list
-                                li.person-nav__item
-                                    a.person-nav__link(href="#") Мои работы
-                                li.person-nav__item
-                                    a.person-nav__link(href="#") Обо мне
-                                li.person-nav__item
-                                    a.person-nav__link(href="#") Блог
+                        nav.box__navigation
+                            ul.box-nav__list
+                                li.box-nav__item
+                                    a.box-nav__link(href="#") Мои работы
+                                li.box-nav__item
+                                    a.box-nav__link(href="#") Обо мне
+                                li.box-nav__item
+                                    a.box-nav__link(href="#") Блог
             section.weclome__down
                 ul.copyright__list
                     li.copyright__item 

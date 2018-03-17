@@ -1,0 +1,26 @@
+extends ../main.layout.pug
+
+block content
+    section.section.about__top
+        .about__h-container
+            .about__socials
+                ul.socials__list
+                    each item in ['vk', 'github', 'in']
+                        li.socials__item
+                            a(href="" class="socials__link")
+                                svg(viewBox="0 0 35 35" class="socials__icon socials__icon--about")
+                                    use(xlink:href=`./images/icons/sprite.svg#${item}`)
+            .about__hamburger
+        .about__person
+            svg.person__bg
+                use(xlink:href="./images/icons/sprite.svg#portfolio_header")
+            .person__block
+                .person__avatar
+                    i.person__avatar--img
+                .person__name Александр Иванов
+                .person__caption Личный сайт веб разработчика
+    .about__middle.about__h-container
+        .about__left
+        .about__right
+    section.about__map
+    section.about__footer

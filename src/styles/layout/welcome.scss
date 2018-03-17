@@ -15,7 +15,13 @@
 
 .welcome__authorization {
     padding-top: 24px;
-    padding-right: 100px;
+
+    @include bigDesktop {
+        padding-right: 100px;
+    }
+
+    @include phone {
+    }
 }
 
 .welcome__middle {

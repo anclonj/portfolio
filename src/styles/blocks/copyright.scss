@@ -1,6 +1,9 @@
 .copyright__list {
     display: flex;
     flex-direction: row;
+    @include phone {
+        flex-wrap: wrap;
+    }
 }
 
 .copyright__item {
@@ -15,6 +18,10 @@
     
     &:last-child {
         border-left: 2px solid #fff;
+
+        @include phone {
+            border-left: none;
+        }
     }
 }
 

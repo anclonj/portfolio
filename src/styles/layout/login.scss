@@ -1,0 +1,26 @@
+.login__text-box {
+    width: rem(345px);
+    height: rem(110px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login__checkbox {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    color: #fff;
+}
+
+.login__radio {
+    padding-top: rem(10px);
+    width: rem(195px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input__text--login-form {
+    flex-grow: 1;
+}

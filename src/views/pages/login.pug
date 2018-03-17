@@ -1,0 +1,51 @@
+extends ../main.layout.pug
+
+block content
+    .background
+        .welcome__flex
+            section.welcome__top
+            main.welcome__middle
+                .box.login__box
+                    .box__backround
+                    form.box__group.login__form(action="action" method="post")
+                        .box__block.login__block
+                            group.block__caption 
+                                .block__cation--text Авторизируйтесь
+                                .block__caption--hr
+                            .login__text-box
+                                group.input
+                                    label(for="login").input__img
+                                        svg.input__img--icon
+                                            use(xlink:href="images/icons/sprite.svg#login")
+                                    input.input__text.input__text--login-form#login(type="text" name="login" placeholder="Логин")
+                                group.input
+                                    label(for="passwd").input__img
+                                        svg.input__img--icon
+                                            use(xlink:href="images/icons/sprite.svg#password")
+                                    input.input__text.input__text--login-form#passwd(type="password" name="passwd" placeholder="Пароль")
+                            .login__checkbox   
+                                label.checkbox
+                                    input.checkbox__chk(type="checkbox", name="inr")
+                                    .checkbox__text Я человек
+                            .block__text Вы точно не робот?
+                            .login__radio
+                                label.radiobtn
+                                    input.radiobtn__radio(type="radio", name="inrr" value="true")
+                                    .radiobtn__text Да
+                                label.radiobtn
+                                    input.radiobtn__radio(type="radio", name="inrr" value="flase" checked)
+                                    .radiobtn__text Не уверен
+                        .box__navigation
+                            ul.box-nav__list
+                                li.box-nav__item
+                                    a.box-nav__link(href="index.html") На главную
+                                li.box-nav__item
+                                    a.box-nav__link(href="#") Войти
+            section.weclome__down
+                ul.copyright__list
+                    li.copyright__item 
+                        span.copyright__text &copy; Александр Иванов
+                    li.copyright__item 
+                        span.copyright__text Создано с любовью в Loftschool
+                    li.copyright__item
+                        span.copyright__text 2018

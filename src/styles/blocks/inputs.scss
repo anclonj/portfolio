@@ -1,0 +1,40 @@
+.input {
+    display: flex;
+    flex-direction: row;
+}
+
+.input__img {
+    height: rem(46px);
+    width: rem(46px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: rem(24px);
+    border-bottom-left-radius: rem(24px);
+    background-color: #f0efe9;
+
+    overflow: hidden;
+}
+
+.input__img--icon {
+    display: block;
+
+    width: 20px;
+    height: 20px;
+
+    fill: #c4cbcd;
+}
+
+.input__text {
+    padding-left: rem(18px);
+    border: 0;
+    color: #aeb0b1;
+    box-sizing: border-box;
+
+    border-radius: 0;
+    border-top-right-radius: rem(24px);
+    border-bottom-right-radius: rem(24px);
+
+    overflow: hidden;
+}
