@@ -140,6 +140,17 @@ gulp.task("svg", done => {
 gulp.task("images", () => {
     return gulp
         .src([`${SRC_DIR}/images/**/*.*`, `!${SRC_DIR}/images/icons/*.*`])
+        .pipe($gp.imagemin([
+            $gp.imagemin.gifsicle({interlaced: true}),
+            $gp.imagemin.jpegtran({progressive: true}),
+            $gp.imagemin.optipng({optimizationLevel: 5}),
+            $gp.imagemin.svgo({
+                plugins: [
+                    {removeViewBox: true},
+                    {cleanupIDs: false}
+                ]
+            })
+        ]))
         .pipe(gulp.dest(`${DIST_DIR}/images/`));
 });
   

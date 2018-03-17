@@ -5,7 +5,10 @@
     @include phone {
         min-width: 320px;
     }
-    
+
     background-image: url("../images/bg/background.jpg");
+    @include telephone {
+        background-image: url("../images/bg/bg_mobile.jpg");
+    }
     background-size: cover; 
 }
