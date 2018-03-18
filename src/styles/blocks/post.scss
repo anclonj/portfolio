@@ -1,0 +1,42 @@
+
+.post__hr {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: rem(140px);
+}
+
+.post__hr--separator {
+    width: rem(680px);
+    height: rem(5px);
+    background-color: #ecebe4;
+}
+
+.post__header {
+    padding-bottom: rem(28px);
+}
+
+.post__header--text  {
+    @include webissimo();
+    font-size: rem(35px);
+    color: #455a64;
+}
+
+.post__datestamp {
+    padding-bottom: rem(28px);
+}
+
+.post__datestamp--date {
+    @include roboto();
+    color: #8eae80;
+}
+
+.post__article {
+    width: 100%;
+    max-width: rem(880px);
+}
+
+.post__article p {
+    color: #455a64;
+    padding-bottom: rem(25px);
+}

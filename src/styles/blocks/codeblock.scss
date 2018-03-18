@@ -1,0 +1,39 @@
+.post__codeblock {
+    width: 100%;
+    background-color: #f5f2f0;
+}
+
+.codeblock--black {
+    color: black;
+}
+
+.codeblock--gray {
+    color: #a3a3a3;
+}
+
+.codeblock--bgray {
+    color: #637586;
+}
+
+.codeblock--green {
+    color: #64980a;
+}
+
+.post__codeblock {
+    list-style-type: none;
+    counter-reset: item;
+}
+
+.codeblock__string {
+    padding-left: 4px;
+
+    &:before {
+        content: counter(item) '';
+        counter-increment: item;
+
+        padding-left: 30px;
+        padding-right: 10px;
+        color: #909191;
+        background-color: #e7e5e3;
+    }
+}

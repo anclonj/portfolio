@@ -1,0 +1,27 @@
+.blog__navigation {
+    display: block;
+    width: 100%;
+    max-width: rem(270px);
+}
+
+.bnav__item {
+    padding-bottom: 40px;
+}
+
+.bnav__link {
+    text-decoration: none;
+    color: #455a64;
+
+    &:hover {
+        color: #4e8839;
+    }
+}
+
+.bnav__link--active {
+    display: block;
+    width: 100%;
+    border-right: 3px solid #4e8839;
+
+    @include roboto("medium", "bold");
+    color: #4e8839;
+}

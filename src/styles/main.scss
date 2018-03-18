@@ -26,6 +26,8 @@
 @import "blocks/button";
 @import "blocks/block-caption";
 @import "blocks/box";
+@import "blocks/codeblock";
+@import "blocks/post";
 
 // Элементы ввода
 @import "blocks/inputs";
@@ -64,3 +66,9 @@
 @import "blocks/socials-blog";
 @import "blocks/hamburger-blog";
 @import "blocks/blog-header-group";
+@import "blocks/triangle";
+@import "blocks/blog-navigation";
+@import "blocks/blog-footer";
+
+// Test
+@import "layout/test";
