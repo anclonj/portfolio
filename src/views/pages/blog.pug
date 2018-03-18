@@ -1,0 +1,29 @@
+extends ../main.layout.pug
+
+block content
+    .w-container
+        .blog__content
+            .blog__top
+                .blog__socials
+                    ul.socials__list.socials__list--blog
+                        each item in ['vk', 'github', 'in']
+                            li.socials__item
+                                a.socials__link.social__link--blog(href="#")
+                                    svg.socials__icon.socials__icon--blog()
+                                        use(xlink:href=`./images/icons/sprite.svg#${item}`)
+                .hamburger.hamburger--blog 
+                    a.hamburger__btn.hamburger__btn--blog(href="")
+                        svg.hamburger__img.hamburger__img--blog
+                            use(xlink:href="./images/icons/sprite.svg#hamburger")
+            .blog__avatar
+                .person__avatar
+                    i.person__avatar--img
+            .blog__header-group
+                h1.blog__group-big Блог
+                .hr.hr--blog
+                .blog__group-description Статьи, которые я написал
+    .blog__treangle
+        svg.treangle__bg(viewbox="0 0 1000 85")
+            use(xlink:href="./images/icons/sprite.svg#bg")
+    .wrapper.wrapper--blog
+        .background.backround--blog  

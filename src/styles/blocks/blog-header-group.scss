@@ -1,0 +1,15 @@
+.blog__group-big {
+    @include webissimo();
+    font-size: rem(63px);
+    color: #fff;
+}
+
+.hr--blog {
+    padding: 0;
+}
+
+.blog__group-description {
+    @include roboto();
+    font-size: rem(16px);
+    color: #fff;
+}

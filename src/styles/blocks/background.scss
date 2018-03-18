@@ -7,7 +7,7 @@
     }
 
     background-image: url("../images/bg/background.jpg");
-    @include telephone {
+    @include phone {
         background-image: url("../images/bg/bg_mobile.jpg");
     }
     background-size: cover; 

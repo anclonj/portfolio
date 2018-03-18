@@ -1,0 +1,27 @@
+.w-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    margin: 0 auto;
+
+    max-width: 1800px;
+    min-width: 400px;
+
+    @include bigDesktop() {
+        max-width: $bigDesktop;
+    }
+
+    @include desktop() {
+        max-width: $desktop;
+    }
+
+    @include tablet() {
+        max-width: $tablet;
+    }
+
+    @include phone() {
+        max-width: $phone;
+    }
+}

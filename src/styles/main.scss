@@ -18,6 +18,7 @@
 @import "variables/colors";
 @import "layout/setup";
 @import "layout/base";
+@import "layout/wcontainer";
 @import "layout/section";
 
 // Общие для блоков
@@ -34,9 +35,15 @@
 // Block
 @import "blocks/block";
 
+// HR 
+@import "blocks/hr";
+
 //Socials block
 @import "blocks/socials";
 @import "blocks/copyright";
+
+// Hamburger
+@import "blocks/hamburger";
 
 // index.html (welcome)
 @import "layout/welcome";
@@ -51,3 +58,9 @@
 @import "layout/login";
 @import "blocks/login-box.scss";
 @import "blocks/login-inputs";
+
+// blog.html
+@import "layout/blog";
+@import "blocks/socials-blog";
+@import "blocks/hamburger-blog";
+@import "blocks/blog-header-group";

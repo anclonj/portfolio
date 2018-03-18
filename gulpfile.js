@@ -150,7 +150,10 @@ gulp.task("images", () => {
                     {cleanupIDs: false}
                 ]
             })
-        ]))
+        ],
+        {
+            verbose: true
+        }))
         .pipe(gulp.dest(`${DIST_DIR}/images/`));
 });
   

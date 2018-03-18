@@ -9,19 +9,35 @@
 }
 
 .welcome__top {
-    align-self: flex-end;
+    width: 100%;
+
+    @include bigDesktop() {
+
+        max-width: 1800px;
+    }
+
+    @include desktop() {
+        max-width: 1200px;
+    }
+
+    @include tablet() {
+        max-width: 768px;
+
+    }
+
+    @include phone() {
+
+    }
+
+    align-self: center;
     flex: 1 0 auto;
 }
 
 .welcome__authorization {
-    padding-top: 24px;
-
-    @include bigDesktop {
-        padding-right: 100px;
-    }
-
-    @include phone {
-    }
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 .welcome__middle {
