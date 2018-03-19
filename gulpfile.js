@@ -9,7 +9,7 @@ const browserSync       = require("browser-sync").create(),
     del                 = require("del");
 
 const SRC_DIR = "src";
-const DIST_DIR = "public";
+const DIST_DIR = "docs";
 const ROOT_PATH = `./${DIST_DIR}`;
     
 // стили
