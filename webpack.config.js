@@ -7,8 +7,8 @@ module.exports = {
         main: path.resolve(__dirname, "src/scripts/main.js")
     },
     output: {
-        path: path.resolve(__dirname, "public/scripts"),
-        publicPath: "/public/",
+        path: path.resolve(__dirname, "docs/scripts"),
+        publicPath: "/docs/",
         filename: "[name].bundle.js"
     },
     module: {
