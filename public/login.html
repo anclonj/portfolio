@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title></title>
+    <link rel="stylesheet" href="/styles/main.min.css">
+  </head>
+  <body>
+    <div class="background">
+      <div class="welcome__flex">
+        <section class="welcome__top"></section>
+        <main class="welcome__middle">
+          <div class="box login__box">
+            <div class="box__backround"></div>
+            <form class="box__group login__form" action="action" method="post">
+              <div class="box__block login__block">
+                <group class="block__caption"> 
+                  <div class="block__cation--text">Авторизируйтесь</div>
+                  <div class="block__caption--hr"></div>
+                </group>
+                <div class="login__text-box">
+                  <group class="input">
+                    <label class="input__img" for="login">
+                      <svg class="input__img--icon">
+                        <use xlink:href="images/icons/sprite.svg#login"></use>
+                      </svg>
+                    </label>
+                    <input class="input__text input__text--login-form" id="login" type="text" name="login" placeholder="Логин">
+                  </group>
+                  <group class="input">
+                    <label class="input__img" for="passwd">
+                      <svg class="input__img--icon">
+                        <use xlink:href="images/icons/sprite.svg#password"></use>
+                      </svg>
+                    </label>
+                    <input class="input__text input__text--login-form" id="passwd" type="password" name="passwd" placeholder="Пароль">
+                  </group>
+                </div>
+                <div class="login__checkbox">  
+                  <label class="checkbox">
+                    <input class="checkbox__chk" type="checkbox" name="inr">
+                    <div class="checkbox__text">Я человек</div>
+                  </label>
+                </div>
+                <div class="block__text">Вы точно не робот?</div>
+                <div class="login__radio">
+                  <label class="radiobtn">
+                    <input class="radiobtn__radio" type="radio" name="inrr" value="true">
+                    <div class="radiobtn__text">Да</div>
+                  </label>
+                  <label class="radiobtn">
+                    <input class="radiobtn__radio" type="radio" name="inrr" value="flase" checked>
+                    <div class="radiobtn__text">Не уверен</div>
+                  </label>
+                </div>
+              </div>
+              <div class="box__navigation">
+                <ul class="box-nav__list">
+                  <li class="box-nav__item"><a class="box-nav__link" href="index.html">На главную</a></li>
+                  <li class="box-nav__item"><a class="box-nav__link" href="#">Войти</a></li>
+                </ul>
+              </div>
+            </form>
+          </div>
+        </main>
+        <section class="weclome__down">
+          <ul class="copyright__list">
+            <li class="copyright__item"> <span class="copyright__text">&copy; Александр Иванов</span></li>
+            <li class="copyright__item"> <span class="copyright__text">Создано с любовью в Loftschool</span></li>
+            <li class="copyright__item"><span class="copyright__text">2018</span></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <script src="/scripts/main.bundle.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5pEx0TcFKJ0ndgUuj7sJyIGwPek7-3WA&amp;callback=initMap"></script>
+  </body>
+</html>
