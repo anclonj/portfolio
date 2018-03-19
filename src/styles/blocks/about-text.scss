@@ -1,0 +1,8 @@
+.about__text--content {
+    @include roboto();
+    color: #566358;
+}
+
+.about__text--content p {
+    padding-bottom: rem(20px);
+}

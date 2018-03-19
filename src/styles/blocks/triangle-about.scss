@@ -1,0 +1,11 @@
+.triangle__img--about .left{
+    fill: #ebefe2;
+}
+
+.triangle__img--about .right{
+    fill: #f4f5f0;
+
+    @include phone() {
+        fill: #ebefe2;
+    }
+}

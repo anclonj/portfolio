@@ -1,0 +1,30 @@
+.about__personal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.about__personal--text {
+    @include webissimo();
+    font-size: rem(49px);
+    color: #373e42;
+}
+
+.about__personal--hr {
+    display: block;
+
+    background-color: #373e42;
+
+    width: rem(90px);
+    height: rem(3px);
+
+    &-mini {
+        background-color: #566358;
+    }
+}
+
+.about__personal--mini {
+    font-size: rem(35px);
+    color: #566358;
+}

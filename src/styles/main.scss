@@ -28,6 +28,7 @@
 @import "blocks/box";
 @import "blocks/codeblock";
 @import "blocks/post";
+@import "layout/flex-layout";
 
 // Элементы ввода
 @import "blocks/inputs";
@@ -47,6 +48,12 @@
 // Hamburger
 @import "blocks/hamburger";
 
+// person-block
+@import "blocks/person-block";
+
+// footer
+@import "layout/footer";
+
 // index.html (welcome)
 @import "layout/welcome";
 @import "blocks/authorization-btn";
@@ -55,6 +62,12 @@
 
 // about.html
 @import "layout/about";
+@import "blocks/triangle-about";
+@import "layout/about-left-grid";
+@import "layout/about-right-grid";
+@import "blocks/about-personal";
+@import "blocks/about-text";
+@import "blocks/about-photo";
 
 // login.html
 @import "layout/login";
@@ -70,5 +83,5 @@
 @import "blocks/blog-navigation";
 @import "blocks/blog-footer";
 
-// Test
-@import "layout/test";
+// works.html
+@import "layout/works";

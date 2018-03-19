@@ -1,0 +1,61 @@
+.person__block {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person__background {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    z-index: 15;
+}
+
+.person__avatar {
+    width: 150px;
+    height: 150px;
+
+    margin: 0 auto;
+
+    border-radius: 50%;
+    background-color: #fff;
+
+    overflow: hidden;
+}
+
+.person__avatar--img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../images/person.png");
+    background-position-x: -923px;
+    background-position-y: 834px;
+}
+
+.person__arrow {
+    height: rem(150px);
+    @include phone() {
+        height: rem(170px);
+    }
+    display: flex;
+    align-items: flex-end;
+
+    z-index: 20;
+}
+
+.person__arrow--img {
+    width: 25px;
+    height: 20px;
+
+    fill: #fff;
+}
