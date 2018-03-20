@@ -1,9 +1,16 @@
 .copyright__list {
     display: flex;
     flex-direction: row;
-    @include phone {
-        flex-wrap: wrap;
+    align-items: center;
+
+    @include phone() {
+        flex-direction: column;
     }
+}
+
+.copyright__list--down {
+    display: flex;
+    flex-direction: row;
 }
 
 .copyright__item {

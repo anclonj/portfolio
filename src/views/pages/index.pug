@@ -16,11 +16,18 @@ block content
                             .person__name Александр Иванов
                             .person__caption Личный сайт веб разработчика
                             ul.socials__list
-                                each item in ['vk', 'github', 'in']
-                                    li.socials__item
-                                        a(href="" class="socials__link")
-                                            svg(viewBox="0 0 35 35" class="socials__icon socials__icon--about")
-                                                use(xlink:href=`./images/icons/sprite.svg#${item}`)
+                                li.socials__item
+                                    a(href="https://vk.com/" class="socials__link")
+                                        svg(viewBox="0 0 35 35" class="socials__icon socials__icon--about")
+                                            use(xlink:href="./images/icons/sprite.svg#vk")
+                                li.socials__item    
+                                    a(href="https://github.com/anclonj" class="socials__link")
+                                        svg(viewBox="0 0 35 35" class="socials__icon socials__icon--about")
+                                            use(xlink:href="./images/icons/sprite.svg#github")
+                                li.socials__item    
+                                    a(href="https://www.linkedin.com/" class="socials__link")
+                                        svg(viewBox="0 0 35 35" class="socials__icon socials__icon--about")
+                                            use(xlink:href="./images/icons/sprite.svg#in")
                         nav.box__navigation
                             ul.box-nav__list
                                 li.box-nav__item
@@ -33,7 +40,9 @@ block content
                 ul.copyright__list
                     li.copyright__item 
                         span.copyright__text &copy; Александр Иванов
-                    li.copyright__item 
-                        span.copyright__text Создано с любовью в Loftschool
                     li.copyright__item
-                        span.copyright__text 2018
+                        ul.copyright__list--down
+                            li.copyright__item 
+                                span.copyright__text Создано с любовью в Loftschool
+                            li.copyright__item
+                                span.copyright__text 2018

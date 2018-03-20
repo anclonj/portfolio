@@ -1,6 +1,12 @@
 .person__box {
     margin: 0 auto;
     width: 380px;
+    max-width: 100%;
+
+    @include phone() {
+        width: 420px;
+    }
+
     height: 400px;
 }
 

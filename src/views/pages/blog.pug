@@ -6,11 +6,18 @@ block content
             .blog__top
                 .blog__socials
                     ul.socials__list.socials__list--blog
-                        each item in ['vk', 'github', 'in']
-                            li.socials__item
-                                a.socials__link.social__link--blog(href="#")
-                                    svg.socials__icon.socials__icon--blog()
-                                        use(xlink:href=`./images/icons/sprite.svg#${item}`)
+                        li.socials__item
+                            a(href="https://vk.com/" class="socials__link")
+                                svg(viewBox="0 0 35 35" class="socials__icon socials__icon--about")
+                                    use(xlink:href="./images/icons/sprite.svg#vk")
+                        li.socials__item    
+                            a(href="https://github.com/anclonj" class="socials__link")
+                                svg(viewBox="0 0 35 35" class="socials__icon socials__icon--about")
+                                    use(xlink:href="./images/icons/sprite.svg#github")
+                        li.socials__item    
+                            a(href="https://www.linkedin.com/" class="socials__link")
+                                svg(viewBox="0 0 35 35" class="socials__icon socials__icon--about")
+                                    use(xlink:href="./images/icons/sprite.svg#in")
                 .hamburger.hamburger--blog 
                     a.hamburger__btn.hamburger__btn--blog(href="")
                         svg.hamburger__img.hamburger__img--blog
@@ -154,11 +161,18 @@ block content
                                     a.fnav__link(href="login.html") Авторизация                     
                         .blog__socials.blog__socials--footer
                             ul.socials__list.socials__list--blog
-                                each item in ['vk', 'github', 'in']
-                                    li.socials__item.social__item--footer
-                                        a.socials__link.social__link--footer(href="#")
-                                            svg.socials__icon.socials__icon--footer
-                                                use(xlink:href=`./images/icons/sprite.svg#${item}`)
+                                li.socials__item.social__item--footer
+                                    a.socials__link.social__link--footer(href="https://vk.com/")
+                                        svg(viewBox="0 0 35 35" class="socials__icon socials__icon--about")
+                                            use(xlink:href="./images/icons/sprite.svg#vk")
+                                li.socials__item.social__item--footer
+                                    a.socials__link.social__link--footer(href="https://github.com/anclonj")
+                                        svg(viewBox="0 0 35 35" class="socials__icon socials__icon--about")
+                                            use(xlink:href="./images/icons/sprite.svg#github")
+                                li.socials__item.social__item--footer
+                                    a.socials__link.social__link--footer(href="https://www.linkedin.com/")
+                                        svg(viewBox="0 0 35 35" class="socials__icon socials__icon--about")
+                                            use(xlink:href="./images/icons/sprite.svg#in")
                     li.upfooter__layout
                         .upfooter__article
                             article.article__contnet 
@@ -166,8 +180,7 @@ block content
                                 | склонный к насилию психопат, который знает, где вы живете.
                             span.article__author
                                 | — Martin Golding
-        .blog__footer--down  
-            .blog__green2  
+        .blog__footer--down   
             .w-container
                 ul.copyright__list.copyright__list--footer
                     li.copyright__item 

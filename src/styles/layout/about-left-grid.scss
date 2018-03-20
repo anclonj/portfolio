@@ -1,5 +1,6 @@
 .about__left--grid {
     width: 90%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 480px;
     grid-template-rows: 
@@ -12,6 +13,24 @@
         "about who"
         "about text";
    
+    @include desktop() {
+        grid-template-columns: 1fr;
+        grid-template-rows: 
+            rem(100px)
+            rem(420px)
+            rem(60px)
+            1fr;
+        
+        grid-template-areas: 
+            "about"
+            "photo"
+            "who"
+            "text";
+    }
+
+    @include phone() {
+        width: 100%;
+    }
     /*
     grid-template-columns: 1fr;
     grid-template-rows: 

@@ -20,6 +20,38 @@
         "left left right right"
         "map map map map";
 
+    @include tablet() {
+        grid-template-columns: 1fr;
+        grid-template-rows: 
+            rem(529px)
+            1fr
+            1fr
+            1fr
+            1fr;
+        grid-template-areas:
+            "top"
+            "personal"
+            "left"
+            "right"
+            "map";
+    }
+    
+    @include phone() {
+        grid-template-columns: 1fr;
+        grid-template-rows: 
+            rem(529px)
+            1fr
+            1fr
+            1fr
+            1fr;
+        grid-template-areas:
+            "top"
+            "personal"
+            "left"
+            "right"
+            "map";
+    }
+
     /* @include phone() {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 

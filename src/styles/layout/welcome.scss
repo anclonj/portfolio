@@ -9,7 +9,9 @@
 }
 
 .welcome__top {
+    overflow: hidden;
     width: 100%;
+    text-align: right;
 
     @include bigDesktop() {
 
@@ -26,7 +28,8 @@
     }
 
     @include phone() {
-
+        text-align: center;
+        max-width: 320px;
     }
 
     align-self: center;
@@ -34,13 +37,19 @@
 }
 
 .welcome__authorization {
-    margin: 0 auto;
-    display: flex;
+    padding-right: 20px;
+    padding-top: 20px;
+
+    @include phone() {
+        padding-right: 0;
+    }
+
+    display: inline-flex;
     justify-content: flex-end;
-    width: 100%;
 }
 
 .welcome__middle {
+    max-width: 100%;
     flex: 1 0 auto;
 }
 
