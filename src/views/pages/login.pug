@@ -1,5 +1,7 @@
 extends ../main.layout.pug
 
+include ../common/_footer-copyright.pug
+
 block content
     .background
         .welcome__flex
@@ -42,10 +44,4 @@ block content
                                 li.box-nav__item
                                     a.box-nav__link(href="#") Войти
             section.weclome__down
-                ul.copyright__list
-                    li.copyright__item 
-                        span.copyright__text &copy; Александр Иванов
-                    li.copyright__item 
-                        span.copyright__text Создано с любовью в Loftschool
-                    li.copyright__item
-                        span.copyright__text 2018
+                +footerCopyright()
