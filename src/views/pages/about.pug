@@ -1,5 +1,8 @@
 extends ../main.layout.pug
 
+include ../common/_triangle.pug
+include ../common/_footer.pug
+
 block content
     .about__container
         .about__top
@@ -40,10 +43,7 @@ block content
                 svg.about__person--bg
                     use(xlink:href="./images/icons/sprite.svg#portfolio_header")
         .about__triangle
-            .triangle.triangle--about
-                svg.triangle__img.triangle__img--about(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none")
-                    polygon.left(points="0,0   0,86   500.8,86   500.8,75.5")
-                    polygon.right(points="1000,0   1000,86   500,86   500,75.5")
+            +triangle("about")
         .about__left
             .about__content
                 .about__left--grid
@@ -86,46 +86,7 @@ block content
         .about__map#map
         .about__foter
             .footer
-                .footer--center.footer__gray
-                    .w-container
-                        ul.upfooter
-                            li.upfooter__layout.upfooter__mini
-                                span.upfooter__mini--text 
-                                    | Этот сайт я сделал в рамках обучения 
-                                    | в Школе онлайн образования LoftSchool. 
-                            li.upfooter__layout.upfooter__layoute--lefta
-                                nav.footer__nav
-                                    ul.fnav__list
-                                        li.fnav__item
-                                            a.fnav__link(href="works.html") Мои работы
-                                        li.fnav__item
-                                            a.fnav__link(href="about.html") Обо мне
-                                        li.fnav__item
-                                            a.fnav__link(href="blog.html") Блог    
-                                        li.fnav__item
-                                            a.fnav__link(href="login.html") Авторизация                     
-                                .blog__socials.blog__socials--footer
-                                    ul.socials__list.socials__list--blog
-                                        li.socials__item
-                                            a(href="https://vk.com/" class="socials__link")
-                                                svg(viewBox="0 0 35 35" class="socials__icon socials__icon--about")
-                                                    use(xlink:href="./images/icons/sprite.svg#vk")
-                                        li.socials__item    
-                                            a(href="https://github.com/anclonj" class="socials__link")
-                                                svg(viewBox="0 0 35 35" class="socials__icon socials__icon--about")
-                                                    use(xlink:href="./images/icons/sprite.svg#github")
-                                        li.socials__item    
-                                            a(href="https://www.linkedin.com/" class="socials__link")
-                                                svg(viewBox="0 0 35 35" class="socials__icon socials__icon--about")
-                                                    use(xlink:href="./images/icons/sprite.svg#in")
-                            li.upfooter__layout
-                                .upfooter__article
-                                    article.article__contnet 
-                                        | Всегда пишите код так, будто сопровождать его будет 
-                                        | склонный к насилию психопат, который знает, где вы живете.
-                                    span.article__author
-                                        | — Martin Golding
-                    .footer__gray--bg
+                +footer("about")
                 .footer--center.footer__green
                     .w-container
                         ul.copyright__list.copyright__list--footer

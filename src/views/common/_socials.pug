@@ -1,6 +1,7 @@
-.socials__list
-    each item in ['vk', 'fb', 'in']
-        li.socials__item
-            a(href="" class="socials__link")
-                svg(class=`socials__icon.socials__icon--T{item}`)
-                    use(xlink:href=`./images/icons/sprite.svg#${item}`)
+mixin socials(icon, link, alt)
+    .socials__list
+        each item in ['vk', 'fb', 'in']
+            li.socials__item
+                a(href="" class="socials__link")
+                    svg(class=`socials__icon.socials__icon--T{item}`)
+                        use(xlink:href=`./images/icons/sprite.svg#${item}`)

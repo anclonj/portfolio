@@ -51,27 +51,6 @@
             "right"
             "map";
     }
-
-    /* @include phone() {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 
-            1fr
-            1fr
-            1fr
-            1fr
-            1fr
-            1fr
-            rem(355px);
-        grid-template-areas: 
-            "top top"
-            "personal personal"
-            "personal personal"
-            "left left"
-            "right right"
-            "map map"
-            "footer footer";    
-    }
-    */
 }
 
 .about__top {
