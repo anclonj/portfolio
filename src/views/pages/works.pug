@@ -1,6 +1,8 @@
 extends ../main.layout.pug
 
 include ../common/_triangle.pug
+include ../common/_footer.pug
+include ../common/_footer-green.pug
 
 block content
     .w-container
@@ -29,4 +31,7 @@ block content
             .works__title
             .works__middle
             .works__about-talk
+            .works__footer  
+                +footer("works")
+                +footerGreen("works")
     .background.background--about
