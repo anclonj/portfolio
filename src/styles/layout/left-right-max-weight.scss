@@ -1,0 +1,16 @@
+.leftRightMaxWeight {
+    width: 100%;
+    max-width: 900px;
+
+    @include desktop() {
+        max-width: 600px;
+    }
+
+    @include tablet() {
+        max-width: 384px;
+    }
+
+    @include phone() {
+        max-width: 420px;
+    }
+}

@@ -20,6 +20,8 @@
 @import "layout/base";
 @import "layout/wcontainer";
 @import "layout/section";
+@import "layout/left-right-max-weight";
+
 
 // Общие для блоков
 @import "blocks/background";
@@ -50,6 +52,12 @@
 
 // person-block
 @import "blocks/person-block";
+
+// big-title
+@import "blocks/big-title";
+
+// teacher
+@import "blocks/teacher";
 
 // footer
 @import "layout/footer";
@@ -85,3 +93,12 @@
 
 // works.html
 @import "layout/works";
+@import "blocks/works-header";
+@import "blocks/works-triangle";
+@import "blocks/works-block";
+@import "blocks/loftschool";
+@import "blocks/works-arrow-block";
+@import "blocks/arrow-group";
+@import "blocks/gallery";
+@import "layout/works-bottom";
+@import "layout/works-teachers";

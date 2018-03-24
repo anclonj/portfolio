@@ -8,31 +8,51 @@
     <link rel="stylesheet" href="./styles/main.min.css">
   </head>
   <body>
-    <div class="w-container">
-      <div class="works__content">
-        <div class="works__top">
-          <div class="works__socials">
-            <ul class="socials__list socials__list--blog">
-              <li class="socials__item"><a class="socials__link" href="https://vk.com/">
-                  <svg class="socials__icon socials__icon--about" viewBox="0 0 35 35">
-                    <use xlink:href="./images/icons/sprite.svg#vk"></use>
-                  </svg></a></li>
-              <li class="socials__item">   <a class="socials__link" href="https://github.com/anclonj">
-                  <svg class="socials__icon socials__icon--about" viewBox="0 0 35 35">
-                    <use xlink:href="./images/icons/sprite.svg#github"></use>
-                  </svg></a></li>
-              <li class="socials__item">   <a class="socials__link" href="https://www.linkedin.com/">
-                  <svg class="socials__icon socials__icon--about" viewBox="0 0 35 35">
-                    <use xlink:href="./images/icons/sprite.svg#in"></use>
-                  </svg></a></li>
-            </ul>
+    <div class="works__content">
+      <div class="works__top" id="top">
+        <div class="w-container">   
+          <header class="works__header">
+            <div class="works__socials">
+              <ul class="socials__list socials__list--blog">
+                <li class="socials__item"><a class="socials__link" href="https://vk.com/">
+                    <svg class="socials__icon socials__icon--about" viewBox="0 0 35 35">
+                      <use xlink:href="./images/icons/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="socials__item">   <a class="socials__link" href="https://github.com/anclonj">
+                    <svg class="socials__icon socials__icon--about" viewBox="0 0 35 35">
+                      <use xlink:href="./images/icons/sprite.svg#github"></use>
+                    </svg></a></li>
+                <li class="socials__item">   <a class="socials__link" href="https://www.linkedin.com/">
+                    <svg class="socials__icon socials__icon--about" viewBox="0 0 35 35">
+                      <use xlink:href="./images/icons/sprite.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <div class="hamburger hamburger--blog"> <a class="hamburger__btn hamburger__btn--blog" href="">
+                <svg class="hamburger__img hamburger__img--blog">
+                  <use xlink:href="./images/icons/sprite.svg#hamburger"></use>
+                </svg></a></div>
+          </header>
+          <div class="about__person">
+            <div class="about__person--center">
+              <div class="person__block">
+                <div class="person__avatar"><i class="person__avatar--img"></i></div>
+                <div class="person__name"> <span class="person__name--text">Александр Иванов</span></div>
+                <div class="person__caption"> <span class="person__caption--text">Личный сайт веб разработчика</span></div>
+                <div class="person__arrow"><a class="person__arrow--link" href="#">
+                    <svg class="person__arrow--img">
+                      <use xlink:href="./images/icons/sprite.svg#portf_arrow_down"></use>
+                    </svg></a></div>
+              </div>
+            </div>
+            <div class="about__person--center">
+              <svg class="about__person--bg">
+                <use xlink:href="./images/icons/sprite.svg#portfolio_header"></use>
+              </svg>
+            </div>
           </div>
-          <div class="hamburger hamburger--blog"> <a class="hamburger__btn hamburger__btn--blog" href="">
-              <svg class="hamburger__img hamburger__img--blog">
-                <use xlink:href="./images/icons/sprite.svg#hamburger"></use>
-              </svg></a></div>
         </div>
-        <div class="works__triangle">
+        <div class="works__top--triangle">
           <div class="triangle triangle--works">
             <svg class="triangle__img triangle__img--works" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
               <polygon class="left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
@@ -40,9 +60,89 @@
             </svg>
           </div>
         </div>
-        <div class="works__title"></div>
-        <div class="works__middle"></div>
-        <div class="works__about-talk"></div>
+      </div>
+      <div class="works__caption">
+        <div class="w-container">
+          <group class="big-title big-title--top">
+            <div class="big-title__title big-title__title--top"><span class="big-title__text big-title__text--top">Мои работы</span>
+              <div class="big-title__hr big-title__hr--top"></div>
+            </div>
+          </group>
+          <div class="works__block--bg"></div>
+        </div>
+      </div>
+      <div class="works__loftblock">
+        <div class="leftRightMaxWeight">
+          <div class="loftschool">
+            <div class="loftschool__caption"><span class="loftschool__caption--text">
+                Сайт школы онлайн
+                Образования</span>
+              <div class="loftschool__caption--hr"></div>
+            </div>
+            <div class="loftschool__programming"><span class="loftschool__programming--text">HTML, CSS, JAVASCRIPT</span></div>
+            <div class="loftschool__button"><a class="loftschool__button--container" href="https://loftschool.com/">
+                <svg class="loftschool__button--img" viewBox="0 0 25 25">
+                  <use xlink:href="./images/icons/sprite.svg#link"></use>
+                </svg><span class="loftschool__button--text">Посмотреть сайт</span></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="works__big-image">
+        <div class="w-container">
+          <div class="works__img"><img class="works__big-image--img" src="./images/works.png"></div>
+        </div>
+      </div>
+      <div class="works__arrow-block">
+        <div class="arrow__group">
+          <div class="gallery__left--content"></div>
+          <div class="arrow__gray-fill"></div>
+          <div class="arrow__container arrow__button">
+            <svg class="gallery__arrow--img" viewBox="0 0 30 45">
+              <use xlink:href="./images/icons/sprite.svg#portf_arrow_down"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="arrow__group">
+          <div class="gallery__right--content"></div>
+          <div class="arrow__gray-fill"></div>
+          <div class="arrow__container arrow__button">
+            <svg class="gallery__arrow--img" viewBox="0 0 30 45">
+              <use xlink:href="./images/icons/sprite.svg#portf_arrow_up"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="works__bottom works__bottom--grid">
+        <div class="works__about-talk">
+          <group class="big-title big-title--bottom">
+            <div class="big-title__title big-title__title--bottom"><span class="big-title__text big-title__text--bottom">Что обо мне говорят</span>
+              <div class="big-title__hr big-title__hr--bottom"></div>
+            </div>
+          </group>
+        </div>
+        <div class="works__teachers">
+          <div class="w-container">
+            <div class="works__teachers--layout">
+              <div class="works__teacher--block">
+                <group class="teacher teacher--one">
+                  <div class="teacher__avatar teacher__avatar--one"><img class="teacher__avatar--img teacher__avatar--one" src="./images/teachers/dmitry.jpg" href="undefined" alt="Ковальчук Дмитрий"/></div>
+                  <div class="teacher__text techer__text--one">Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</div>
+                  <div class="teacher__name teacher__name--one">Ковальчук Дмитрий</div>
+                  <div class="teacher__position teacher__position--one">основатель LoftSchool</div>
+                </group>
+              </div>
+              <div class="works__teacher--block">
+                <group class="teacher teacher--two">
+                  <div class="teacher__avatar teacher__avatar--two"><img class="teacher__avatar--img teacher__avatar--two" src="./images/teachers/vladimir.jpg" href="undefined" alt="Сабанцев Владимир"/></div>
+                  <div class="teacher__text techer__text--two">Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</div>
+                  <div class="teacher__name teacher__name--two">Сабанцев Владимир</div>
+                  <div class="teacher__position teacher__position--two">преподаватель</div>
+                </group>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="works__form"></div>
         <div class="works__footer"> 
           <div class="footer footer--$(subClass)">
             <div class="footer--center footer__gray">
@@ -103,7 +203,7 @@
         </div>
       </div>
     </div>
-    <div class="background background--about"></div>
+    <div class="background background--about" id="topbg"></div>
     <script src="./scripts/main.bundle.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5pEx0TcFKJ0ndgUuj7sJyIGwPek7-3WA&amp;callback=initMap"></script>
   </body>

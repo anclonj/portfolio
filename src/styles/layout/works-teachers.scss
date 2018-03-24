@@ -1,0 +1,30 @@
+.works__teachers--layout {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &:first-child {
+        align-self: flex-end;
+        flex-grow: 1;
+    }
+
+    &:last-child {
+        align-self: flex-start;
+        flex-grow: 1;
+    }
+
+    @include phone() {
+        flex-direction: column;
+
+        &:first-child {
+            align-self: center;
+        }
+    
+        &:last-child {
+            align-self: center;
+        }
+    }
+}

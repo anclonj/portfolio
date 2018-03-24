@@ -1,0 +1,38 @@
+.arrow__group {
+    width: 50%;
+    height: 100%;
+}
+
+.arrow__gray-fill {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    background-color: #b0b7aa;
+    opacity: .7;
+    z-index: 10;
+}
+
+.arrow__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    top: -100%;
+    left: 0;
+
+    z-index: 20;
+}
+
+.arrow__button {
+    cursor: pointer;
+}

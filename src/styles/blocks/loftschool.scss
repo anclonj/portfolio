@@ -1,0 +1,74 @@
+.loftschool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loftschool__caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: rem(110px);
+}
+
+.loftschool__caption--text {
+    @include webissimo();
+    font-size: rem(35px);
+    color: #566358;
+}
+
+.loftschool__caption--hr {
+    display: block;
+    height: rem(3px);
+    width: rem(90px);
+    background-color: #566358;
+}
+
+.loftschool__programming {
+    padding-top: rem(27px);
+    padding-bottom: rem(58px);
+}
+
+.loftschool__programming--text {
+    @include roboto("medium");
+    font-size: rem(16px);
+    color: #4e8839;
+}
+
+.loftschool__button--container {
+    padding-left: rem(18px);
+    padding-right: rem(21px);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 22px;
+    height: 44px;
+    background-color: #6c9c5a;
+
+    transition: .3s;
+    &:hover {
+        background-color: darken(#6c9c5a, 10%);
+    }
+}
+
+.loftschool__button--img {
+    padding-right: rem(12px);
+
+    width: 22px;
+    height: 22px;
+    fill: #fff;
+}
+
+.loftschool__button--text {
+    color: #fff;
+    @include roboto("medium");
+    font-size: rem(16px);
+}
+
+

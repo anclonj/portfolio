@@ -1,0 +1,31 @@
+.works__bottom--grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 
+        250px
+        1fr
+        685px
+        185px;
+
+    grid-template-areas: 
+        "about about"
+        "teachers teachers"
+        "form form"
+        "footer footer"
+}
+
+.works__about-talk {
+    grid-area: about;
+}
+
+.works__teachers {
+    grid-area: teachers;
+}
+
+.works__form {
+    grid-area: form;
+}
+
+.works__footer {
+    grid-area: footer;
+}

@@ -1,0 +1,52 @@
+.teacher {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-left: rem(10px);
+    padding-right: rem(10px);
+    max-width: rem(380px);
+}
+
+.teacher__avatar {
+    width: rem(80px);
+    height: rem(80px);
+
+    border-radius: 50%;
+
+    overflow: hidden;
+}
+
+.teacher__avatar--img {
+    width: 100%;
+}
+
+.teacher__text {
+    padding-top: rem(20px);
+    padding-bottom: rem(30px);
+
+    @include roboto("regular", "italic");
+    font-size: rem(16px);
+    color: #5d5a55;
+}
+
+.teacher__name {
+    @include roboto("bold", "italic");
+    font-size: rem(16px);
+    color: #4e8839;
+
+    padding-bottom: rem(10px);
+}
+
+.teacher__position {
+    @include roboto("regular", "italic");
+    font-size: rem(16px);
+    color: #373e42;
+
+    
+    &::before {
+        content: "—";
+        padding-right: 5px;
+    }
+}

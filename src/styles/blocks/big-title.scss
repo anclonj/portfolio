@@ -1,0 +1,35 @@
+.big-title {
+    width: 100%;
+    min-height: rem(175px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-title__title {
+    width: rem(340px);
+    // height: rem(80px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.big-title__text {
+    @include webissimo();
+    font-size: rem(63px);
+    color: #373e42;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.big-title__hr {
+    width: rem(90px);
+    height: rem(3px);
+
+    background-color: #373e42;
+}
+

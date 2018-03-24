@@ -1,0 +1,7 @@
+mixin teacher(src, text, name, position, subClass)
+    group(class=`teacher teacher--${subClass}`)
+        div(class=`teacher__avatar teacher__avatar--${subClass}`)
+            img(class=`teacher__avatar--img teacher__avatar--${subClass}` src=`${src}` href=`${link}` alt=`${name}`)
+        div(class=`teacher__text techer__text--${subClass}`)= text
+        div(class=`teacher__name teacher__name--${subClass}`)= name
+        div(class=`teacher__position teacher__position--${subClass}`)= position

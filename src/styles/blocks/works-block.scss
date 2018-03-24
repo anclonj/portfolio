@@ -1,0 +1,35 @@
+.works__block {
+    width: 100%;
+    min-height: rem(175px);
+
+    /*
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    */
+}
+
+.works__title {
+    width: rem(340px);
+    height: rem(80px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.works__block--text {
+    @include webissimo();
+    font-size: rem(63px);
+    color: #373e42;
+
+    text-transform: uppercase;
+}
+
+.works__block--hr {
+    width: rem(90px);
+    height: rem(3px);
+
+    background-color: #373e42;
+}

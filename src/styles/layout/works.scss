@@ -1,37 +1,112 @@
 .works__content {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 
+        1fr
+        rem(185px)
+        rem(525px) 
+        rem(225px) 
+        auto;
+
+    grid-template-areas: 
+        "top top"
+        "caption caption"
+        "loft big-image"
+        "loft arrow-block"
+        "bottom bottom";
+
+    @include tablet() {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 
+            1fr
+            1fr
+            1fr 
+            1fr 
+            1fr
+            1fr;
+        
+        grid-template-areas:
+            "top"
+            "caption"
+            "big-image"
+            "loft"
+            "arrow-block"
+            "bottom";
+    }
 }
 
 .works__top {
     grid-area: top;
 
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 
     padding-top: rem(30px);
     @include phone() {
         padding-top: rem(16px);
     }
-}
 
-.works__socials {
-    padding-left: rem(30px);
-    @include phone() {
-        padding-left: rem(9px);
+    &--triangle {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+        z-index: 10;
+        margin-bottom: -5px;
     }
-    grid-area: socials;
 }
 
-.works__triangle {
-    grid-area: personal;
+
+.works__caption {
+    grid-area: caption;
+    background-color: #f8f9f5;
+}
+
+.works__loftblock {
+    grid-area: loft;
+
+    background-color: #ebefe2;
 
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
-    z-index: 10;
-    margin-bottom: -5px;
+    @include tablet() {
+        align-items: center;
+    }
+}
+
+.works__big-image {
+    grid-area: big-image;
+
+    background-color: #e1e4d7;
+}
+
+.works__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.works__big-image--img {
+    height: 90%;
+}
+
+.works__arrow-block {
+    background-color: #fff;
+    grid-area: arrow-block;
+}
+
+.works__bottom {
+    grid-area: bottom;
+
+    background-image: url("../images/bg/bottom.jpg");
+    background-size: cover;
 }
