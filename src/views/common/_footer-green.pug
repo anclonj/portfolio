@@ -1,6 +1,7 @@
 include _footer-copyright.pug
 
 mixin footerGreen(subClass)
-    .footer--center.footer__green
-        +footerCopyright()
-        div(class=`footer__green--bg footer__green--${subClass}`)
+    div(class=`green green__${subClass}`)
+        div(class=`green__bg green__bg--${subClass}`)
+        div(class=`green__content green__content--${subClass}`)
+            +footerCopyright("green")

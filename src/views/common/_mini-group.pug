@@ -1,0 +1,10 @@
+mixin mini(subClass)
+    div(class=`mini__group mini__group--${subClass}`)
+        div(class=`mini__content mini__content--${subClass}`)
+        div(class=`mini__gray-fill mini__gray-fill--${subClass}`)
+        div(class=`mini__container mini__button`)
+            svg(class=`mini__arrow mini__arrow--${subClass}` viewBox='0 0 30 45')
+                if subClass === 'up'
+                    use(xlink:href="./images/icons/sprite.svg#portf_arrow_up")
+                else
+                    use(xlink:href="./images/icons/sprite.svg#portf_arrow_down")

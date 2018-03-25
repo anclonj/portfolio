@@ -1,0 +1,11 @@
+.bottom__teachers--layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    @include phone() {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}

@@ -1,0 +1,5 @@
+mixin hamburger(subClass)
+    div(class=`hamburger hamburger--${subClass}`) 
+        a(class=`hamburger__btn hamburger__btn--${subClass}` href="")
+            svg(class=`hamburger__img hamburger__img--${subClass}`)
+                use(xlink:href="./images/icons/sprite.svg#hamburger")

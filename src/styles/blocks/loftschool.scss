@@ -12,12 +12,22 @@
     justify-content: space-between;
 
     height: rem(110px);
+
+    @include phone() {
+        width: rem(192px);
+        height: rem(68px);
+    }
 }
 
 .loftschool__caption--text {
     @include webissimo();
     font-size: rem(35px);
     color: #566358;
+    text-align: center;
+
+    @include phone() {
+        font-size: rem(21px);
+    }
 }
 
 .loftschool__caption--hr {
@@ -30,12 +40,21 @@
 .loftschool__programming {
     padding-top: rem(27px);
     padding-bottom: rem(58px);
+
+    @include phone() {
+        padding-top: rem(20px);
+        padding-bottom: rem(18px);        
+    }
 }
 
 .loftschool__programming--text {
     @include roboto("medium");
     font-size: rem(16px);
     color: #4e8839;
+
+    @include phone() {
+        font-size: rem(14px);
+    }
 }
 
 .loftschool__button--container {
@@ -69,6 +88,10 @@
     color: #fff;
     @include roboto("medium");
     font-size: rem(16px);
+
+    @include phone() {
+        font-size: rem(14px);
+    }
 }
 
 

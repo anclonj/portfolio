@@ -1,0 +1,18 @@
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.name__caption {
+    font-size: rem(28px);
+    @include roboto('medium', 'normal');
+    color: #fff;
+}
+
+.name__description {
+    @include roboto("regular");
+    font-size: rem(16px);
+    color: #d2d6d5;
+}

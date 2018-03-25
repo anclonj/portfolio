@@ -1,0 +1,12 @@
+mixin buttons(buttons, subClass)
+    div(class=`buttons__block buttons__block--${subClass}`)
+        ul(class=`buttons__list buttons__list--${subClass}`)
+            each val, index in buttons
+                li(class=`buttons__item buttons__item--${subClass}`)
+                    if val.type === 'submit'
+                        input(class=`panel__button panel__button--${subClass}` type='submit', value=`${val.text}`)
+                    if val.type === 'reset'
+                        input(class=`panel__button panel__button--${subClass}` type='reset', value=`${val.text}`)
+                    if val.type === 'link'
+                        a(class=`panel__button panel__button--${subClass} panel__button--link` href=`${val.link}`)
+                            span(class=`panel__button--text`)= val.text

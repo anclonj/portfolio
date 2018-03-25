@@ -1,0 +1,11 @@
+.big-title__title--form span {
+    font-size: rem(35px);
+
+    @include phone() {
+        font-size: rem(21px);
+    }
+}
+
+.big-title__hr--form {
+    width: rem(90px);
+}

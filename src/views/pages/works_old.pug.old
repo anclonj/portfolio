@@ -1,0 +1,101 @@
+extends ../main.layout.pug
+
+include ../common/_triangle.pug
+include ../common/_footer.pug
+include ../common/_footer-green.pug
+include ../common/_block-caption.pug
+include ../common/_teacher.pug
+
+block content
+    .works__content
+        .works__top#top
+            .w-container    
+                header.works__header
+                    .works__socials
+                        ul.socials__list.socials__list--blog
+                            li.socials__item
+                                a(href="https://vk.com/" class="socials__link")
+                                    svg(viewBox="0 0 35 35" class="socials__icon socials__icon--about")
+                                        use(xlink:href="./images/icons/sprite.svg#vk")
+                            li.socials__item    
+                                a(href="https://github.com/anclonj" class="socials__link")
+                                    svg(viewBox="0 0 35 35" class="socials__icon socials__icon--about")
+                                        use(xlink:href="./images/icons/sprite.svg#github")
+                            li.socials__item    
+                                a(href="https://www.linkedin.com/" class="socials__link")
+                                    svg(viewBox="0 0 35 35" class="socials__icon socials__icon--about")
+                                        use(xlink:href="./images/icons/sprite.svg#in")
+                    .hamburger.hamburger--blog 
+                        a.hamburger__btn.hamburger__btn--blog(href="")
+                            svg.hamburger__img.hamburger__img--blog
+                                use(xlink:href="./images/icons/sprite.svg#hamburger")
+                .about__person
+                    .about__person--center
+                        .person__block
+                            .person__avatar
+                                i.person__avatar--img
+                            .person__name 
+                                span.person__name--text Александр Иванов
+                            .person__caption 
+                                span.person__caption--text Личный сайт веб разработчика
+                            .person__arrow
+                                a.person__arrow--link(href="#")
+                                    svg.person__arrow--img
+                                        use(xlink:href="./images/icons/sprite.svg#portf_arrow_down")
+                    .about__person--center
+                        svg.about__person--bg
+                            use(xlink:href="./images/icons/sprite.svg#portfolio_header")
+            .works__top--triangle
+                +triangle("works")
+        .works__caption
+            .w-container
+                +bigTitle("Мои работы", "top")
+                .works__block--bg
+        .works__loftblock
+            .leftRightMaxWeight
+                .loftschool
+                    .loftschool__caption
+                        span.loftschool__caption--text
+                            | Сайт школы онлайн
+                            | Образования
+                        .loftschool__caption--hr
+                    .loftschool__programming
+                        span.loftschool__programming--text
+                            | HTML, CSS, JAVASCRIPT
+                    .loftschool__button
+                        a.loftschool__button--container(href="https://loftschool.com/")
+                            svg.loftschool__button--img(viewBox="0 0 25 25")
+                                use(xlink:href="./images/icons/sprite.svg#link")
+                            span.loftschool__button--text Посмотреть сайт
+        .works__big-image
+            .w-container
+                .works__img
+                    img.works__big-image--img(src="./images/works.png")
+        .works__arrow-block
+            .arrow__group
+                .gallery__left--content
+                .arrow__gray-fill
+                .arrow__container.arrow__button
+                    svg.gallery__arrow--img(viewBox="0 0 30 45")
+                        use(xlink:href="./images/icons/sprite.svg#portf_arrow_down")
+            .arrow__group
+                .gallery__right--content
+                .arrow__gray-fill
+                .arrow__container.arrow__button
+                    svg.gallery__arrow--img(viewBox="0 0 30 45")
+                        use(xlink:href="./images/icons/sprite.svg#portf_arrow_up")
+        .works__bottom.works__bottom--grid
+            .works__about-talk
+                +bigTitle("Что обо мне говорят", "bottom")
+            .works__teachers
+                .w-container
+                    .works__teachers--layout
+                        .works__teacher--block
+                            +teacher("./images/teachers/dmitry.jpg", "Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!", "Ковальчук Дмитрий", "основатель LoftSchool", "one")
+                        .works__teacher--block
+                            +teacher("./images/teachers/vladimir.jpg", "Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!", "Сабанцев Владимир", "преподаватель", "two")
+            .works__form
+            .works__footer  
+                +footer("works")
+                +footerGreen("works")
+    .background.background--about#topbg

@@ -1,6 +1,8 @@
 .socials__icon--blog {
     fill: #fff;
 
+    transition: .3s;
+
     &:hover {
         fill: #4e8839;
     }

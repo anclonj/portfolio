@@ -1,4 +1,13 @@
 .footer {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    // align-items: stretch;
+}
+/* 
+.footer {
+    height: 100%;
     z-index: 20;
     display: flex;
     flex-direction: column;
@@ -52,3 +61,5 @@
         z-index: 20;
     }
 }
+
+*/

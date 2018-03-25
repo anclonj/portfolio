@@ -1,0 +1,9 @@
+include _socials.pug
+include _hamburger.pug
+
+mixin header(subClass)
+    header(class=`header header--${subClass}`)
+        div(class=`header__socials header__socials--${subClass} flex-center`)
+            +socials(`${subClass}`)
+        div(class=`header__hamburger header__hamburger--${subClass} flex-center`)
+            +hamburger(`${subClass}`)

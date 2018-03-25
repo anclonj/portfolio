@@ -4,6 +4,8 @@
 
     @include roboto('medium', 'normal');
 
+    transition: .3s;
+
     &:hover {
         background-color: $color9;
         border-color: $color8;

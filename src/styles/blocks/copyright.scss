@@ -1,3 +1,53 @@
+.copyright {
+    @include phone() {
+        height: rem(36px);
+    }
+}
+
+.copyright__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.copyright__item {
+    color: #fff;
+
+    @include roboto('medium', 'normal');
+    font-size: 16px;
+
+    padding-right: rem(5px);
+    padding-left: rem(5px);
+    border-right: 2px solid #fff;
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        border-right: 0;
+        padding-right: 0;
+    }
+
+    @include phone() {
+        @include roboto('light', 'normal');
+        font-size: rem(14px);
+        border-right: 1px solid #fff;
+
+        &:first-child {
+            border-right: none;
+            text-align: center;
+            width: 100%;
+        }
+
+        &:last-child {
+            padding-left: rem(5px);
+        }
+    }
+}
+
+/*
 .copyright__list {
     display: flex;
     flex-direction: row;
@@ -36,3 +86,4 @@
     padding-left: 6px;
     padding-right: 6px;
 }
+*/

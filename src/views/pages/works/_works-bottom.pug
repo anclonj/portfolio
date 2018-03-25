@@ -1,0 +1,16 @@
+include _teacher.pug
+include ../../common/_footer.pug
+
+.bottom
+    .bottom__about
+        .w-container
+            +bigTitle("Что обо мне говорят", "bottom")
+    .bottom__teachers
+        .w-container
+            .bottom__teachers--layout
+                +teacher("./images/teachers/dmitry.jpg", "Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!", "Ковальчук Дмитрий", "основатель LoftSchool", "one")
+                +teacher("./images/teachers/vladimir.jpg", "Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!", "Сабанцев Владимир", "преподаватель", "two")
+    .bottom__form
+        include _works-form.pug
+    .bottom__footer
+        +footer("works")

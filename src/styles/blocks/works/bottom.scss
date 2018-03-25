@@ -1,0 +1,48 @@
+.bottom {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 
+        rem(250px)
+        1fr
+        rem(685px)
+        rem(185px);
+
+    grid-template-areas: 
+        "about"
+        "teacher"
+        "form"
+        "footer";
+        
+    @include phone() {
+        // height: rem(1490px);
+
+        grid-template-rows:    
+            145px
+            460px
+            1fr
+            346px;
+    }
+}
+
+.bottom__about {
+    grid-area: about;
+}
+
+.bottom__teachers {
+    grid-area: teacher; 
+}
+
+.bottom__form {
+    grid-area: form;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom__footer {
+    grid-area: footer;
+}

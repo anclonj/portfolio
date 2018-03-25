@@ -1,7 +1,15 @@
-mixin socials(icon, link, alt)
-    .socials__list
-        each item in ['vk', 'fb', 'in']
-            li.socials__item
-                a(href="" class="socials__link")
-                    svg(class=`socials__icon.socials__icon--T{item}`)
-                        use(xlink:href=`./images/icons/sprite.svg#${item}`)
+mixin socials(subClass)
+    div(class=`socials socials--${subClass} flex-center`)
+        ul(class=`socials__list socials--${subClass}`)
+            li(class=`socials__item socials__item--${subClass}`)
+                a(href="https://vk.com/" class=`socials__link socials__link--${subClass}`)
+                    svg(viewBox="0 0 35 35" class=`socials__icon socials__icon--${subClass}`)
+                        use(xlink:href="./images/icons/sprite.svg#vk")
+            li(class=`socials__item socials__item--${subClass}`)
+                a(href="https://github.com/anclonj" class=`socials__link socials__link--${subClass}`)
+                    svg(viewBox="0 0 35 35" class=`socials__icon socials__icon--${subClass}`)
+                        use(xlink:href="./images/icons/sprite.svg#github")
+            li(class=`socials__item socials__item--${subClass}`)
+                a(href="https://www.linkedin.com/" class=`socials__link socials__link--${subClass}`)
+                    svg(viewBox="0 0 35 35" class=`socials__icon socials__icon--${subClass}`)
+                        use(xlink:href="./images/icons/sprite.svg#in")

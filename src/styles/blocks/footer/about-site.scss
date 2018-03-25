@@ -1,0 +1,18 @@
+.site__about {
+    width: rem(360px);
+    text-align: left;
+
+    @include phone() {
+        width: rem(264px);
+        text-align: center;
+    }
+}
+
+.site__about--text {
+    @include roboto("light");
+    color: #fff;
+
+    @include phone() {
+        font-size: rem(14px);
+    }
+}

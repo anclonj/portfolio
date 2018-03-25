@@ -61,6 +61,12 @@
 
 // footer
 @import "layout/footer";
+@import "blocks/footer-gray";
+@import "blocks/footer/about-site";
+@import "blocks/footer/footer-nav";
+@import "blocks/footer/footer-nav-up";
+@import "blocks/footer/footer-article";
+@import "blocks/footer/footer-green";
 
 // index.html (welcome)
 @import "layout/welcome";
@@ -91,14 +97,46 @@
 @import "blocks/blog-navigation";
 @import "blocks/blog-footer";
 
+// Header
+@import "blocks/header";
+
+// Personal-block
+@import "blocks/personal-block";
+
+// Name-block
+@import "blocks/name-block";
+
+// header-arrow
+@import "blocks/header-arrow";
+
+//transparent-panel
+@import "layout/transparent-panel";
+
+// buttons-block-panel
+@import "blocks/common/buttons-block-panel";
+
 // works.html
 @import "layout/works";
+@import "blocks/works-socials";
+@import "blocks/loftschool";
+@import "blocks/works/works-flex";
+@import "blocks/mini-group";
+@import "blocks/works/bottom";
+@import "blocks/works/big-title-bottom";
+@import "blocks/works/bottom-teachers-layout";
+@import "blocks/works/panel-form.scss";
+@import "blocks/works/transparent-panel";
+@import "blocks/works/big-title-form";
+@import "blocks/works/panel-inputs";
+@import "blocks/common/panel-buttons";
+
+/*
 @import "blocks/works-header";
 @import "blocks/works-triangle";
 @import "blocks/works-block";
-@import "blocks/loftschool";
 @import "blocks/works-arrow-block";
 @import "blocks/arrow-group";
 @import "blocks/gallery";
 @import "layout/works-bottom";
 @import "layout/works-teachers";
+*/

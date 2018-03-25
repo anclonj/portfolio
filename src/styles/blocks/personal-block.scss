@@ -1,0 +1,13 @@
+.personal__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-betweenа;
+
+    &--up {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}

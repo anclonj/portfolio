@@ -1,6 +1,5 @@
 .big-title {
     width: 100%;
-    min-height: rem(175px);
 
     display: flex;
     align-items: center;
@@ -17,18 +16,26 @@
     align-items: center;
 }
 
-.big-title__text {
+.big-title__title--text {
     @include webissimo();
     font-size: rem(63px);
     color: #373e42;
 
     text-align: center;
     text-transform: uppercase;
+
+    @include phone() {
+        font-size: rem(35px);
+    }
 }
 
 .big-title__hr {
     width: rem(90px);
     height: rem(3px);
+
+    @include phone() {
+        width: rem(56px); 
+    }
 
     background-color: #373e42;
 }

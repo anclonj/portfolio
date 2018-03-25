@@ -1,0 +1,12 @@
+.footer__navigation {
+    height: rem(65px);
+
+    @include phone() {
+        height: rem(55px);
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}

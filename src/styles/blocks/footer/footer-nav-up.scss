@@ -1,0 +1,42 @@
+.fnav__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.fnav__item {
+    padding-left: rem(17px);
+    padding-right: rem(17px); 
+
+    @include phone() {
+        padding-left: rem(5px);
+        padding-right: rem(5px);
+    }
+}
+
+.socials__icon--footer {
+    fill: #aaadae;
+
+    transition: .3s;
+
+    &:hover {
+        fill: #fff;
+    }
+}
+
+.fnav__link {
+    text-decoration: none;
+    @include roboto("bold");
+    color: #fff;
+
+    transition: .3s;
+
+    &:hover {
+        color: #86a77a;
+    }
+
+    @include phone() {
+        @include roboto("medium");
+        font-size: rem(14px);
+    }
+}

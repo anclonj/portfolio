@@ -1,9 +1,10 @@
-mixin footerCopyright()
+mixin footerCopyright(subClass)
     .w-container
-        ul.copyright__list.copyright__list--footer
-            li.copyright__item 
-                span.copyright__text &copy; Александр Иванов
-            li.copyright__item 
-                span.copyright__text Создано с любовью в Loftschool
-            li.copyright__item
-                span.copyright__text 2018
+        div(class=`copyright copyright--${subClass}`)
+            ul(class=`copyright__list copyright__list--${subClass}`)
+                li(class=`copyright__item copyright__item--${subClass}`) 
+                    span(class=`copyright__text copyright__text--${subClass}`) &copy; Александр Иванов
+                li(class=`copyright__item copyright__item--${subClass}`)
+                    span(class=`copyright__text copyright__text--${subClass}`) Создано с любовью в Loftschool
+                li(class=`copyright__item copyright__item--${subClass}`)
+                    span(class=`copyright__text copyright__text--${subClass}`) 2018

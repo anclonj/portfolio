@@ -8,7 +8,7 @@
 
     width: 100%;
     max-width: 1800px;
-    min-width: 400px;
+    min-width: 320px;
 
     @include bigDesktop() {
         max-width: $bigDesktop;

@@ -1,0 +1,58 @@
+.panel__input {
+    border-radius: 22px;
+    border: none;
+
+    overflow: hidden;
+
+    width: rem(330px);
+    @include roboto("regular");
+    font-size: rem(16px);
+
+    padding-left: rem(20px);
+
+    @include phone() {
+        width: rem(250px);
+        font-size: rem(14px);
+    }
+}
+
+.panel__input--text {
+    height: rem(45px);
+
+    @include phone() {
+        height: rem(40px);
+    }
+}
+
+.panel__input--textarea {
+    padding-top: rem(16px);
+
+    height: rem(140px);
+}
+
+.panel__button {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    background: #82ab73;
+    color: #fff;
+    border: none;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    &:hover {
+        background: #689a57;
+    }
+}
+
+.panel__button--link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    text-decoration: nonoe;
+}

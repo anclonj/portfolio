@@ -1,0 +1,18 @@
+.transparentpanel--works {
+    width: rem(380px);
+    height: rem(460px);
+
+    @include phone() {
+        width: rem(300px);
+        height: rem(424px);
+    }
+}
+
+.tranparentpanel__bg--works {
+    background-color: #fff;
+    opacity: .6;
+}
+
+.transparentpanel__content--works {
+    opacity: .9;
+}

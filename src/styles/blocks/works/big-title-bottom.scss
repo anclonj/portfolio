@@ -1,0 +1,8 @@
+.big-title--bottom {
+    margin: 0 auto;
+
+    @include phone() {
+        width: rem(190px);
+        font-size: rem(35px);
+    }
+}

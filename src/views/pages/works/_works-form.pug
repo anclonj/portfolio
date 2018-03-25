@@ -1,0 +1,19 @@
+extends  ../../common/_transparent-panel.pug
+
+include ../../common/_panel-buttons.pug
+
+block variables
+    - subClass = "works"
+
+    - buttons = [{type: "submit", text: "Отправить", link: ""}, {type: "reset", text: "Очистить", link: ""}, {type: "link", text: "Яндекс", link: "https://yandex.ru"}]
+
+block content
+    form.panel__form(action='action' method='post')
+        .panel__flex
+            .panel__form--layout
+                +bigTitle("Связаться со мной", "form")
+                input.panel__input.panel__input--text#name(type="text", name="name" placeholder="Имя")
+                input.panel__input.panel__input--text#email(type="text", name="email" placeholder="Email")
+                textarea.panel__input.panel__input--textarea#message(name="message" placeholder="Ваше сообщение")
+            .panel__buttons
+                +buttons(buttons, "works")
