@@ -2,7 +2,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-betweenа;
+    justify-content: space-between;
+
+    padding-top: rem(90px);
+    height: rem(375px);
+    
+    @include phone()
+    {
+        height: rem(390px);
+    }
 
     &--up {
         display: flex;

@@ -6,6 +6,7 @@ include ../common/_person-name.pug
 include ../common/_header-arrow.pug
 include ../common/_block-caption.pug
 include ../common/_mini-group.pug
+include ../common/_triangle.pug
 
 block content
     .works__content
@@ -19,6 +20,7 @@ block content
                     .personal__block--down
                         .personal__arrow
                             +arrow("works")
+            +triangle("works")
         .works__caption
             .w-container
                 +bigTitle("Мои работы", "top")
